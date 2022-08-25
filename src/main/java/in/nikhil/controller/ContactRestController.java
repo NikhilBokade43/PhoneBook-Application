@@ -26,7 +26,7 @@ public class ContactRestController {
 
 		String result = service.upsert(contact);
 		return new ResponseEntity<>(result, HttpStatus.CREATED);
-	}
+	} 
 
 	@GetMapping("/contacts")
 	public ResponseEntity<List<Contact>> ViewAllContacts() {
